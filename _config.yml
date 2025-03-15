@@ -100,9 +100,12 @@ theme: cactus
 theme_config:
   project_url: https://aclevename.dev
   social_links:
-    -
-      icon: github
+    - icon: github
       link: http://github.com/aclevername
+  nav:
+    home: /
+    about: /about/
+    articles: /archives/
   
 
 # Deployment
