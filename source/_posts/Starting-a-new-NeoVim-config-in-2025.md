@@ -10,17 +10,17 @@ tags:
 Since I started my career I was always fascinated by vim. My first SE job was
 as an intern at Pivotal and VIM was well used across the R&D department. It
 took me a long time, and a very patient teacher (thanks Tom!) to get the basics
-memorised. Since then there been no going back.
+memorized. Since then there been no going back.
 
-The team I worked on had standardised on a VIM config maintained by a VIM
-enthuasiast at the company (who I nevermet),
+The team I worked on had standardized on a VIM config maintained by a VIM
+enthusiast at the company (who I never met),
 [Luan](https://github.com/luan/vimfiles) who maintained his own config that was
 used across the org. I never cared about how it was built or bothered to make
 any changes. As a developer at the same company as the author, everything
 worked for my Golang/YAML/Bash heavy setup.
 
 Eventually I moved on from Pivotal and continued using VIM, at WeaveWorks I got
-to work with another VIM enthuasiast, who shared with me their [NeoVim
+to work with another VIM enthusiast, who shared with me their [NeoVim
 config](https://github.com/warehouse-13/a-new-hope). This was an easy
 transition to use from the Luan VIM files setup I was using before, and again I
 rarely made changes, so wasn't really bothered with how it worked under the
@@ -29,7 +29,7 @@ hood.
 Fast forward 4 years later, and the config began to let me down. I had some
 rending bugs that would occur when switching between visual mode. I had no clue
 what was in my setup that was causing this, and decided to crack open the
-config. I quickly realised I had no idea what any of it meant, and that the
+config. I quickly realized I had no idea what any of it meant, and that the
 NeoVim world has moved on a lot since its creation. It felt like the perfect
 time to dig into what was in my actual config, and to rewrite it to use the
 latest plugin manager.
@@ -101,16 +101,16 @@ A quick search fo Golang nvim plugins lead me to
 had to do was install the plugin, and off I go. But that didn't work. I could
 see all the commands, e.g. `:GoFmt`, but they didn't work, and everything I
 expected from a Golang nvim setup wasn't working, e.g. auto-complete,
-compliatione error warnigns etc. I went straight to ask chatgpt for help.
+compilation error warnings etc. I went straight to ask chatgpt for help.
 
-It turns out go.nvim is a massive, prebundled configuration for Golang. My
-guess it it makes sense for a barebones config, but with kickstart.nvim, you
+It turns out go.nvim is a massive, pre-bundled configuration for Golang. My
+guess it it makes sense for a bare bones config, but with kickstart.nvim, you
 actually have a lot of that bundled software available. I learnt that it
 includes:
 
-- nvim-lspconfig: LSP stands for language server procotol, its what integrates
-vim with getting autocompletes, go-to defintions etc. Basically a lot of the
-things that are mandatory for programming in any language. This mean't that all
+- nvim-lspconfig: LSP stands for language server protocol, its what integrates
+vim with getting autocompletes, go-to definitions etc. Basically a lot of the
+things that are mandatory for programming in any language. This meant that all
 you actually had to install was gopls, which is the LSP for golang, it ships
 along the Go binary, TIL'd! The two work together hand in hand.
 
@@ -142,16 +142,16 @@ file explorer for that directory, and for pressing `-` to
 open a file explorer for the directory I'm in. These were
 easy enough to setup using Telescope.
 
-- Markdown: I was suprised that kickstart.nvim didn't come with out of the box
+- Markdown: I was surprised that kickstart.nvim didn't come with out of the box
 line breaks to maintain good line length hygiene when  writing Markdown (and
-other) files. I quickly got tired of manually runing `gqip` to format and
+other) files. I quickly got tired of manually running `gqip` to format and
 installed. This turned out to be a pretty tiny change
 
 ## Closing
 
 That was it, a pretty smooth experience, that was made 10x easier using AI to
 help guide me on the changes to make and to explain what each plugin does. I
-feel well prepated to keep modifying my config as I find new plugins to try and
+feel well prepared to keep modifying my config as I find new plugins to try and
 fixing any bugs I run into. On reflection, my original config was actually
 pretty simple, I'm sure as the weeks go on I'll find all the small features in
 my old setup that are missing from this.
